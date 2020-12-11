@@ -1,0 +1,34 @@
+.container_main{
+    height: 15%;
+}
+.container{
+    display: flex;
+    border: 1px solid lightgray;
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;
+}
+.container > div:first-child{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container > div:last-child{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.active{
+    height: 100%;
+    width: 20%;
+    border: 3px solid black;
+    /* filter:brightness(200%); */
+}
+.inactive{
+    height: 100%;
+    width: 20%;
+    /* border: 0.5px solid lightgray; */
+    filter: grayscale(20%);
+}
+.text{
+    -webkit-text-stroke: 0.5px black;
+    font-size: 30px;
+}

@@ -1,0 +1,40 @@
+.container_more_cats{
+    margin-top: 100px;
+    height: 250px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.container_img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+.container_img > img{
+    height: 100%;
+}
+.noCats{
+    font-size: 40px;
+    margin-top: 40px;
+}
+.link{
+    color: green;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 15px;
+}
+.link:hover{
+    color: green;
+    text-decoration: none;
+}
+.container_link{
+    margin-left: 10%;
+}
+.header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1200
+}
+.filter{
+    margin-left: 10%;
+}

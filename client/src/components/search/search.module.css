@@ -1,0 +1,11 @@
+.header{
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.body{
+    margin-top: 85px;
+    z-index: 10;
+}

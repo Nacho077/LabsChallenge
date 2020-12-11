@@ -1,0 +1,47 @@
+.container_main{
+    display: flex;
+    padding: 30px;
+    margin-left: 35%;
+}
+.page{
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.page:focus{
+    outline: none;
+}
+.empty_button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: default;
+    padding: 10px;
+    margin-top: 20px;
+}
+.empty_button:focus{
+    outline: none;
+}
+.page_selected{
+    width: 40px;
+    height: 40px;
+    background-color: lightseagreen;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: black 3px 3px 10px;
+}
+.page_selected:focus{
+    outline: none;
+}

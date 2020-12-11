@@ -1,0 +1,14 @@
+.container_main{
+    width: 25%;
+    padding: 10px;
+    margin-left: -20px;
+}
+.container_cat{
+    line-height: 60px;
+    font-size: 19px;
+    cursor: pointer;
+    color: darkslateblue;
+    list-style: none;
+    margin-left: -20px;
+    border-bottom: 1px solid gray;
+}

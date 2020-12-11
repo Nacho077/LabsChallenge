@@ -1,0 +1,25 @@
+.container{
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.container input{
+    padding: 4px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.container button{
+    padding: 7px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.borrar{
+    color: grey;
+}

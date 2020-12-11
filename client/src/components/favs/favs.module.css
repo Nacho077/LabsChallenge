@@ -1,0 +1,16 @@
+.header{
+    position: fixed;
+    z-index: 1200;
+    width: 100%;
+}
+.container_products{
+    padding-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+.empty{
+    width: 100%;
+    font-size: 30px;
+    margin-left: 600px;
+    color: grey;
+}

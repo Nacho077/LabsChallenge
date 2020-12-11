@@ -1,0 +1,18 @@
+.form{
+    background-color: yellow;
+    height: 738px;
+    position: relative;
+}
+.container{
+    padding-top: 18%;
+}
+.button{
+    position: absolute;
+    margin: auto;
+    top: 70%;
+    left: 43%;
+    width: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}

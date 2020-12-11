@@ -1,0 +1,91 @@
+.container_main{
+    position: fixed;
+    text-align: center;
+    z-index: 1100;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    background-color: white;
+}
+.container_back{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    z-index: 1200;
+}
+.container_div{
+    position: absolute;
+    top: 30px;
+    background-color: #b7c6dc;
+    width: 95%;
+    z-index: 1200;
+    margin-left: 30px;
+    border-radius: 50px;
+    border: 1px solid grey;
+}
+.container_header{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-between;
+    position: relative; 
+}
+.container_header > img{
+    width: 400px;
+    border-radius: 20px;
+    height: auto;
+}
+.container_product{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+    margin-left: 50px;
+}
+.title{
+    text-align: left;
+    font-size: 50px;
+}
+.cantidad{
+    text-align: left;
+    font-size: 30px;
+}
+.acept_MP{
+    text-align: left;
+    color: green;
+    font-size: 25px;
+}
+.reject_MP{
+    text-align: left;
+    color: grey;
+    font-size: 20px;
+}
+.container_perfil{
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+}
+.description{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.link{
+    font-size: 25px;
+    text-align: left;
+}
+.heart{
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+    cursor: pointer;
+}
+.container_heart{
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+}

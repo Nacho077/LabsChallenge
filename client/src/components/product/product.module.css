@@ -1,0 +1,106 @@
+.container_main{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #b7c6dc;
+    border-radius: 50px;
+}
+.container_presentacion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.container_datos{
+    width: 40%;
+}
+.precio{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.quantity{
+    font-size: 20px;
+    color: red;
+}
+.condition{
+    display: flex;
+    color: green;
+    font-size: 20px;
+}
+.nuevo{
+    margin-left: 10px;
+    color: green;
+}
+.container_especificaciones{
+    margin: auto;
+    display: flex;
+    margin-top: 70px;
+    width: 87%;
+    justify-content: space-between;
+}
+.especificaciones{
+    width: 40%;
+}
+.container_table{
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+.container_table > tr{
+    line-height: 50px;
+}
+.table_name{
+    width: 350px;
+}
+.container_table > tbody > tr:nth-child(odd) > .table_name{
+    background-color: gainsboro;
+}
+.container_table > tr:nth-child(even) > .table_name{
+    background-color: whitesmoke;
+}
+.table_name,
+.table_value{
+    padding: 15px;
+    background-color: white;
+}
+.puntaje{
+    height: 200px;
+}
+.acept_MP{
+    font-size: 25px;
+    color: green;
+}
+.info{
+    margin-top: -10px;
+    font-size: 25px;
+    color: grey;
+}
+.description{
+    width: 50%;
+    font-size: 40px;
+    color: rgb(39, 39, 39);
+}
+.footer{
+    margin-top: 50px;
+}
+.cargando{
+    margin-top: 100px;
+    margin-bottom: 354px;
+    text-align: center;
+    font-size: 30px;
+    color: grey;
+
+}
+.empty_div{
+    background-color: grey;
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+}
+.container_heart{
+    display: flex;
+    cursor: pointer;
+    font-size: 25px;
+}

@@ -1,0 +1,56 @@
+.container_main{
+    display: flex;
+    flex-direction: column;
+}
+.container_filtros{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.filtro{
+    display: flex;
+    margin: auto;
+}
+.filtro > select{
+    width: 200px;
+    height: 30px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    color: darkgreen;
+}
+.filtro > p{
+    padding: 5px;
+    font-size: 20px;
+    color: green;
+}
+.container_products{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.container_products > div:hover{
+    margin-top: -20px;
+}
+.cargando{
+    color: grey;
+    font-size: 30px;
+    margin: auto;
+}
+.presentacion{
+    margin: auto;
+    font-size: 40px;
+}
+.primer{
+    margin-left: 30%;
+    color: grey;
+    font-size: 30px;
+}
