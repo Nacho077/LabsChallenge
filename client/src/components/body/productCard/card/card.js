@@ -47,6 +47,7 @@ export default function Card ({product, onBack}){
                         <Link to={`/product/${product.product_id}`} className={s.link}>
                             Ver mas información del producto
                         </Link>
+                        <a href={product.permalink} className={s.link}>Ir al enlace del producto</a>
                     </div>
                     <div className={s.container_perfil}>
                         <h3>Datos del vendedor:</h3>

@@ -60,6 +60,9 @@ export default function Product(props){
                         <div className={s.puntaje}>
                             <Puntaje num={prod.seller_reputation_level}/>
                         </div>
+                        <div>
+                            <a href={prod.permalink} style={{fontSize: '30px'}}>ir al enlace del producto</a>
+                        </div>
                         {user.products ? user.products.find(p => p.name === prod.name) ? (
                             <div className={s.container_heart} onClick={removefav}>
                                 <p>Quitar de Favoritos</p>

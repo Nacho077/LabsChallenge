@@ -46,6 +46,9 @@ module.exports = sequelize => {
         },
         description: {
             type: DataTypes.TEXT
+        },
+        permalink: {
+            type: DataTypes.STRING
         }
     })
 }

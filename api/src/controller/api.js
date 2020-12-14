@@ -29,7 +29,8 @@ function addProducts(q, offset, finalSet, searchId){
                     img: data.results[i].thumbnail,
                     acept_MP: data.results[i].accepts_mercadopago,
                     searchId: Number(searchId),
-                    product_id: data.results[i].id
+                    product_id: data.results[i].id,
+                    permalink: data.results[i].permalink
                 }
             }))
         }
@@ -149,7 +150,8 @@ function readProduct(id){
             'seller_id',
             'description',
             'product_id',
-            'id'
+            'id',
+            'permalink'
         ],
         include:[
             {
@@ -192,7 +194,8 @@ function addProductsToCat(id, offset, finalSet, searchId){
                     img: data.results[i].thumbnail,
                     acept_MP: data.results[i].accepts_mercadopago,
                     searchId: Number(searchId),
-                    product_id: data.results[i].id
+                    product_id: data.results[i].id,
+                    permalink: data.results[i].permalink
                 }
             }))
         }
