@@ -14,12 +14,16 @@ export default function Categories(){
         dispatch(api.getCategories())
         setCat(categories)
     }, [categories, dispatch])
+
+    const setThisCat = (cat) => {
+        dispatch(api.selectCat(cat))
+    }
     
     return(
         <div className={s.container_main}>
             <ul>
             {cat && cat.map(c => (
-                <Link to={`/category/${c.id}`} key={c.id}>
+                <Link to={`/category/${c.id}`} key={c.id} onClick={() => setThisCat(c.name)}>
                     <li className={s.container_cat} style={items.length === 0 ? {marginLeft: '-150px'} : null}>{c.name}</li>
                 </Link>
             ))}

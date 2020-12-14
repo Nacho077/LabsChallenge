@@ -1,5 +1,5 @@
 import actionCreator from './actionCreator.js'
-const { ITEMS, SETITEMS, KEY, PAGE, CATEGORIES, PRODUCT, CATEGORY, USER } = actionCreator
+const { ITEMS, SETITEMS, KEY, PAGE, CATEGORIES, PRODUCT, CATEGORY, USER, THISCAT } = actionCreator
 
 const initialState = {
     cache: {},
@@ -11,7 +11,8 @@ const initialState = {
     cacheProducts: {},
     category: {},
     cacheCats: {},
-    user: {}
+    user: {},
+    this_cat: ""
 }
 
 export default (state = initialState, action) => {
@@ -88,6 +89,11 @@ export default (state = initialState, action) => {
             return{
                 ...state,
                 user: action.payload
+            }
+        case THISCAT:
+            return{
+                ...state,
+                this_cat: action.payload
             }
         default:
             return{

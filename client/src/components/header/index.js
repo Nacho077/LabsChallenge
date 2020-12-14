@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import api from '../../redux/actionCreator'
 import logo from './logo.ico'
 import SearchBar from './searchBar/searchBar.js'
 import s from './index.module.css'
@@ -8,6 +9,11 @@ import s from './index.module.css'
 
 export default function Header({val}){
     const user = useSelector(state =>  state.user)
+    const dispatch = useDispatch()
+
+    const logOut = () => {
+        dispatch(api.logout())
+    }
 
     return(
         <div className={s.navBar}>
@@ -21,6 +27,7 @@ export default function Header({val}){
                     </Link>
                 </div>
                 <SearchBar home={val}/>
+                {user.id ? <div className={s.logOut} onClick={logOut}>Log Out</div> : null}
                 {!user.id && <Link to="/login" className={s.link}>Log In</Link>}
                 {user.id ? (user.products && user.products.length) ? (
                     <div style={{cursor: 'pointer'}}>

@@ -86,6 +86,20 @@ const actionCreator = {
             this._dispatchPromise(promise, this.USER, dispatch)
         }
     },
+    logout: function(){
+        return{
+            type: this.USER,
+            payload: {}
+        }
+    },
+
+    THISCAT: "THIS_CAT",
+    selectCat: function(cat){
+        return{
+            type: this.THISCAT,
+            payload: cat
+        }
+    },
     
 
     _dispatchPromise: function(promise, type, dispatch){

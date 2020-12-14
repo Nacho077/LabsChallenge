@@ -3,13 +3,17 @@
     height: 738px;
     position: relative;
 }
+.form > img{
+    margin-left: 650px;
+    margin-top: 35px;
+}
 .container{
-    padding-top: 18%;
+    padding: 3%;
 }
 .button{
     position: absolute;
     margin: auto;
-    top: 70%;
+    top: 75%;
     left: 43%;
     width: 15%;
     padding: 10px;

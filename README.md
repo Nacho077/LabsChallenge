@@ -3,7 +3,13 @@
 </p>
 
 # Iniciar
-Clona el repositorio y haz npm install y npm start en las carpetas client y api y ya puedes usar la página!
+Clona el repositorio y haz npm install y npm start en las carpetas client y api, luego crea un archivo `.env` en la carrpeta api con el siguiente formato:
+
+    DATABASE_URL=postgres://usuarioDePostgres:contraseñaDePostgres@localhost:5432/mercadolibre
+    PORT=3001
+    FRONT_URL=http://localhost:3000
+
+ya puedes usar la página!
 
 ## Home
 <img src='./img/Home.png'/>

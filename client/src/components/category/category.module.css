@@ -16,6 +16,17 @@
     font-size: 40px;
     margin-top: 40px;
 }
+.container_title{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.container_img_buttons{
+    display: flex;
+}
 .link{
     color: green;
     font-size: 25px;

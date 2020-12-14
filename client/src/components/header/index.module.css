@@ -18,6 +18,10 @@
     border-bottom: 1px solid black;
     background-color: yellow;
 }
+.logOut{
+    font-size: 25px;
+    cursor: pointer;
+}
 .link{
     color: black;
     cursor: pointer;
