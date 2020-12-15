@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Footer from '../footer/footer.js'
 import s from './home.module.css'
 import lupa from '../../img/Lupa.png'
 
@@ -21,7 +20,6 @@ export default function Home(){
                     </div>
                 </div>
             </Link>
-            <Footer/>
         </div>
     )
 }

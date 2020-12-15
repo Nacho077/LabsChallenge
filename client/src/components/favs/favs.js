@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Header from '../header'
 import ProductCard from '../body/productCard/productCard.js'
 import s from './favs.module.css'
 
@@ -9,9 +8,6 @@ export default function Favs(){
 
     return(
         <div className={s.container}>
-            <div className={s.header}>
-                <Header/>
-            </div>
             <div className={s.container_products}>
                 { user.products.length ?
                     user.products.map(item => (

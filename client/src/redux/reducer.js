@@ -12,7 +12,8 @@ const initialState = {
     category: {},
     cacheCats: {},
     user: {},
-    this_cat: ""
+    this_cat: "",
+    compare: []
 }
 
 export default (state = initialState, action) => {

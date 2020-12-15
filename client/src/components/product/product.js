@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import api from '../../redux/actionCreator.js'
 import Puntaje from '../body/productCard/card/puntaje/puntaje.js'
-import Header from '../header'
 import Carousel from './carousel/carousel.js'
-import Footer from '../footer/footer.js'
 import s from './product.module.css'
 
 export default function Product(props){
@@ -39,7 +37,6 @@ export default function Product(props){
 
     return(
         <div>
-            <Header/>
             {Object.keys(prod).length ? (
             <div className={s.container_main}>
                 <div className={s.container_presentacion}>
@@ -61,7 +58,7 @@ export default function Product(props){
                             <Puntaje num={prod.seller_reputation_level}/>
                         </div>
                         <div>
-                            <a href={prod.permalink} style={{fontSize: '30px'}}>ir al enlace del producto</a>
+                            <a href={prod.permalink} target="_blank" rel="noreferrer" style={{fontSize: '30px'}}>ir al enlace del producto</a>
                         </div>
                         {user.products ? user.products.find(p => p.name === prod.name) ? (
                             <div className={s.container_heart} onClick={removefav}>
@@ -103,9 +100,6 @@ export default function Product(props){
                     </div>
                 </div>
             </div>) : <div className={s.cargando}>Cargando...</div>}
-            <div className={s.footer}>
-                <Footer/>
-            </div>
         </div>
     )
 }

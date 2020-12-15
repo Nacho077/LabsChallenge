@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import api from '../../redux/actionCreator'
-import Header from '../header'
 import Filter from '../body/filter/filters.js'
-import Footer from '../footer/footer.js'
 import Pages from '../body/pages/pages.js'
 import s from './category.module.css'
 
@@ -38,9 +36,6 @@ export default function Category(props){
     return(
         <div>
             <div className={s.container_more_cats}>
-                <div className={s.header}>
-                    <Header/>
-                </div>
                 <div className={s.container_top}>
                     <div clasName={s.container_title}>
                         <h1 className={s.title}>{thisCat}</h1>
@@ -70,7 +65,6 @@ export default function Category(props){
                 <Filter items={cat.products} id={params.id}/>
             </div>
             <Pages cat={cat} id={params.id}/>
-            <Footer cat={cat}/>
         </div>
     )
 }
