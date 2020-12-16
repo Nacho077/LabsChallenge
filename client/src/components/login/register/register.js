@@ -53,7 +53,7 @@ export default function REGISTER(){
         for(var key in error){
             if(error[key]) return alert(error[key])
         }
-        const verify = await axios.get(`http://localhost:3001/user/email/${input.email}`)
+        const verify = await axios.get(`${process.env.REACT_APP_API_URL}/user/email/${input.email}`)
         if(!verify.data){
             dispatch(api.register(input))
         }else alert("Este mail ya está registrado")

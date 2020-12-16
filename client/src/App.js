@@ -7,11 +7,14 @@ import Favs from './components/favs/favs.js'
 import User from './components/login/user'
 import NavBar from './components/header'
 import Footer from './components/footer/footer.js'
+import s from './app.module.css'
 
 function App() {
   return (
     <div className="App">
-      <Route path="/:page" component={NavBar}/>
+      <div className={s.header}>
+        <Route path="/:page" component={NavBar}/>
+      </div>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/product/:id" component={Product}/>
