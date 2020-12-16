@@ -23,7 +23,7 @@
     transition: opacity 500ms;
 }
 .image{
-    margin-left: 10%;
+    margin: auto;
     width: 467px;
     position: relative;
     opacity: 0
@@ -31,7 +31,7 @@
 .search{
     position: absolute;
     top: 285px;
-    left: 690px;
+    left: 530px;
     font-size: 30px;
     display: flex;
     cursor: pointer;
