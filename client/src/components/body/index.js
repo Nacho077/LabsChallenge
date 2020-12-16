@@ -12,7 +12,7 @@ export default function Body(){
         <div className={s.body}>
             <div className={s.products}>
                 <Categories className={s.category}/>
-                <Filters items={items}/>
+                <Filters items={items} className={s.items}/>
             </div>
             <Pages/>
         </div>

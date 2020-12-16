@@ -27,7 +27,7 @@ export default function Header({val}){
                     </Link>
                 </div>
                 <SearchBar home={val}/>
-                {user.id ? <div className={s.logOut} onClick={logOut}>Log Out</div> : null}
+                {user.id ? <div className={s.logOut} onClick={logOut}><Link to="/search">Log Out</Link></div> : null}
                 {!user.id && <Link to="/login" className={s.link}>Log In</Link>}
                 {user.id ? (user.products && user.products.length) ? (
                     <div style={{cursor: 'pointer'}}>

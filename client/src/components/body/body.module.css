@@ -4,8 +4,12 @@
 }
 .products{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .category{
     justify-self: flex-start;
+    width: 20%;
+}
+.items{
+    max-width: 70%;
 }

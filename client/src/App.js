@@ -23,7 +23,9 @@ function App() {
         <Route exact path="/login" component={User}/>
         <Route exact path="/favs" component={Favs}/>
       </Switch>
-      <Route path="/" component={Footer}/>
+      <div className={s.footer}>
+        <Route path="/" component={Footer}/>
+      </div>
     </div>
   );
 }

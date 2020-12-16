@@ -24,7 +24,7 @@ export default function Categories(){
             <ul>
             {cat && cat.map(c => (
                 <Link to={`/category/${c.id}`} key={c.id} onClick={() => setThisCat(c.name)}>
-                    <li className={s.container_cat} style={items.length === 0 ? {marginLeft: '-150px'} : null}>{c.name}</li>
+                    <li className={s.container_cat}>{c.name}</li>
                 </Link>
             ))}
             </ul>
