@@ -9,7 +9,13 @@ Clona el repositorio y haz npm install y npm start en las carpetas client y api,
     PORT=3001
     FRONT_URL=http://localhost:3000
 
+y un archivo `.env` en la carpeta client con el siguiente formato: 
+
+    REACT_APP_API_URL=http://localhost:3001
+    PORT=3000
+
 ya puedes usar la página!
+o puedes verla entrado [aqui](https://mercadohenry.herokuapp.com/)
 
 ## Home
 <img src='./img/Home.png'/>
